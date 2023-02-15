@@ -1,11 +1,11 @@
-// Pętlowy trójkąt
+// Pętlowy trójkąt - pętla wywołująca siedem razy funkcję console.log
 
 for ( let number = "#"; number <= "#######"; number = number + "#" ) {
     console.log( number );
 }
 
 
-// FizzBuzz
+// FizzBuzz - program drukujący za pomocą funkcji console.log liczby od 1 - 100. Zamiast liczb podzielnych przez 3 drukuje słowo Fizz, zamiast liczb podzielnych przez 5 drukuje słowo Buzz. Jeśli liczba podzielna przez 3 i 5 drukuje FizzBuzz.
 
 for ( let number = 1; number <= 100; number++) {
     let output = "";
@@ -25,28 +25,11 @@ for ( let number = 1; number <= 100; number++) {
 // }
 
 
-// Szachownica
+// Szachownica - tworzy łańcuch reprezentujący siatkę elementów o wymiarach 8x8
 
-// for (let number = 1; number <= 8; number++) {
-//     let output = "";
-//     if (number % 2 == 1) output += "# # # # ";
-//     if (number % 2 == 0) output += " # # # #";
-//     console.log(output)
-// }
-
-let size = 8;
-
-let board = "";
-
-for (let y = 0; y < size; y++) {
-  for (let x = 0; x < size; x++) {
-    if ((x + y) % 2 === 0) {
-      board += " ";
-    } else {
-      board += "#";
-    }
-  }
-  board += "\n";
+for (let number = 1; number <= 8; number++) {
+    let output = "";
+    if (number % 2 == 1) output += "# # # # ";
+    if (number % 2 == 0) output += " # # # #";
+    console.log(output)
 }
-
-console.log(board);
